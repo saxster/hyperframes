@@ -13,12 +13,6 @@ name: CodeQL
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-  schedule:
-    # Mondays at 14:39 UTC — matches the cadence default setup was running on.
-    - cron: "39 14 * * 1"
-
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
