@@ -9,14 +9,8 @@ env:
   HYPERFRAMES_NO_TELEMETRY: "1"
 
 on:
-  pull_request:
+  push:
     branches: [main]
-    paths:
-      - "registry/blocks/**"
-      - "registry/components/**"
-      - "scripts/generate-catalog-previews.ts"
-      - ".github/workflows/catalog-previews.yml"
-
 concurrency:
   group: catalog-previews-${{ github.ref }}
   cancel-in-progress: true
