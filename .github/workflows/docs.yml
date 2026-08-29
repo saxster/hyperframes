@@ -9,13 +9,6 @@ env:
   HYPERFRAMES_NO_TELEMETRY: "1"
 
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - "docs/**"
-      - "DOCS_GUIDELINES.md"
-      - "packages/core/schemas/**"
-      - "scripts/sync-schemas.ts"
   push:
     branches: [main]
     paths:
